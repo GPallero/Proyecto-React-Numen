@@ -9,8 +9,8 @@ import {Button} from 'react-bootstrap';
 const styles = {
 
     img:{
-        width: "560px",
-        height: "432px",
+        width: "75%",
+        height: "auto",
     },
 
     h4: {
@@ -27,13 +27,13 @@ const Gastronomia = () => {
 return ( 
 
 <Fragment clasName="Gastronomia">
-    <Container fluid className="sm">
-        <Row fluid className="m-2 mt-4">
-            <Col>
+    <Container className="sm">
+        <Row className="m-2 mt-4">
+            <Col sm className="text-center">
             <img className="img-responsive" style= {styles.img} src={Comida} alt="comida"></img>
            </Col>;
 
-            <Col>
+            <Col sm>
               <h4 style={styles.h4}>Disfruta de nuestra gastronomía</h4>
               <h1> Sabores argentinos</h1>
 

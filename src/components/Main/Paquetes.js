@@ -34,7 +34,7 @@ const Paquetes =({infoPaquetes}) => {
 
      return (
  <Fragment>
-    <Container fluid className="sm md">
+    <Container fluid className="sm">
         <Row>
             <Col sm className="ms-4 border" style={styles.paquete}> 
             <img style={styles.img} className="img" alt="Bariloche" src={infoPaquetes[0].src}></img>
