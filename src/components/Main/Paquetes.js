@@ -1,14 +1,10 @@
 import React, {Fragment} from 'react';
-import Bariloche from '../images/Bariloche.jpg';
-import Cataratas from '../images/Cataratas.jpg';
-import Salta from '../images/Salta.jpg';
-import Madryn from '../images/Madryn.jpg';
+
 import {Button} from 'react-bootstrap';
 import {Container} from 'react-bootstrap';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
-import Modal from 'react-bootstrap/Modal'
-// import axios from 'axios';
+
 
 
 const styles = {
@@ -34,17 +30,17 @@ const styles = {
     },
 }
 
-const Paquetes =() => {
+const Paquetes =({infoPaquetes}) => {
 
-    return (
+     return (
  <Fragment>
-    <Container fluid className="mt-4">
+    <Container fluid className="sm md">
         <Row>
-        <Col  className="ms-4 border" style={styles.paquete}> 
-            <img style={styles.img} className="img" alt="Bariloche" src={Bariloche}></img>
-            <h3>Bariloche</h3>
-             <p>4 días 3 noches</p>
-             <h4> $50000</h4>
+            <Col sm className="ms-4 border" style={styles.paquete}> 
+            <img style={styles.img} className="img" alt="Bariloche" src={infoPaquetes[0].src}></img>
+            <h3>{infoPaquetes[0].nombre}</h3>
+             <p>{infoPaquetes[0].duracion}</p>
+             <h4>$ {infoPaquetes[0].precio}</h4>
 
              <Button
              variant="primary"
@@ -53,11 +49,11 @@ const Paquetes =() => {
              >Comprar</Button>
         </Col>
         
-        <Col className="ms-4 border" style={styles.paquete}>
-            <img style={styles.img} className="img" alt="Cataratas" src={Cataratas}></img>
-            <h3>Cataratas del Iguazú</h3>
-             <p>4 días 3 noches</p>
-             <h4> $45000</h4>
+        <Col sm className="ms-4 border" style={styles.paquete}>
+            <img style={styles.img} className="img" alt="Cataratas" src={infoPaquetes[1].src}></img>
+            <h3>{infoPaquetes[1].nombre}</h3>
+             <p>{infoPaquetes[1].duracion}</p>
+             <h4>$ {infoPaquetes[1].precio}</h4>
              <Button
              variant="primary" 
              size="lg"
@@ -65,11 +61,11 @@ const Paquetes =() => {
              >Comprar</Button>
         </Col>        
 
-        <Col className="ms-4 border" style={styles.paquete}>
-            <img style={styles.img} className="img" alt="Salta" src={Salta}></img>
-            <h3>Salta y Jujuy</h3>
-             <p>8 días 7 noches</p>
-             <h4> $80000</h4>
+        <Col sm className="ms-4 border" style={styles.paquete}>
+            <img style={styles.img} className="img" alt="Salta" src={infoPaquetes[2].src}></img>
+            <h3>{infoPaquetes[2].nombre}</h3>
+             <p>{infoPaquetes[2].duracion}</p>
+             <h4>$ {infoPaquetes[2].precio}</h4>
              <Button
              variant="primary"
              size="lg"
@@ -77,11 +73,11 @@ const Paquetes =() => {
              >Comprar</Button>
         </Col>
        
-        <Col className="ms-4 border" style={styles.paquete}>
-            <img style={styles.img} className="img" alt="Madryn" src={Madryn}></img>
-            <h3>Puerto Madryn</h3>
-             <p>6 días 5 noches</p>
-             <h4> $60000</h4>
+        <Col sm className=" ms-4 border" style={styles.paquete}>
+            <img style={styles.img} className="img" alt="Madryn" src={infoPaquetes[3].src}></img>
+            <h3>{infoPaquetes[3].nombre}</h3>
+             <p>{infoPaquetes[3].duracion}</p>
+             <h4>$ {infoPaquetes[3].precio}</h4>
              <Button
              variant="primary"
              size="lg"

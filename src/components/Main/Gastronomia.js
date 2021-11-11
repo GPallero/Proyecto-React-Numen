@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import Comida from '../images/Comida.jpg';
+import Comida from './images/Comida.jpg';
 import {Container} from 'react-bootstrap';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';
@@ -9,7 +9,7 @@ import {Button} from 'react-bootstrap';
 const styles = {
 
     img:{
-        width: "570px",
+        width: "560px",
         height: "432px",
     },
 
@@ -27,13 +27,13 @@ const Gastronomia = () => {
 return ( 
 
 <Fragment clasName="Gastronomia">
-    <Container className="m-4">
-        <Row className=" m-0 justify-content-center align-items-center">
-            <Col className="auto">
-            <img className="img" style= {styles.img} src={Comida} alt="comida"></img>
+    <Container fluid className="sm">
+        <Row fluid className="m-2 mt-4">
+            <Col>
+            <img className="img-responsive" style= {styles.img} src={Comida} alt="comida"></img>
            </Col>;
 
-            <Col className="auto">
+            <Col>
               <h4 style={styles.h4}>Disfruta de nuestra gastronomía</h4>
               <h1> Sabores argentinos</h1>
 

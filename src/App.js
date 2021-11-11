@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-import Paquetes from './components/Paquetes';
-import Gastronomia from './components/Gastronomia'
+// import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+// import Footer from './components/Footer/Footer';
+
 
 
 function App() {
   return (
-    <div id="Paquetes">
-       <Paquetes/>
-       <Gastronomia/>
+    <div>
+       {/* <Header/> */}
+       <Main/>
+       {/* <Footer/> */}
    </div>
   );
 }
