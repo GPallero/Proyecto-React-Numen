@@ -26,7 +26,7 @@ const Gastronomia = () => {
 
 return ( 
 
-<Fragment clasName="Gastronomia">
+<Fragment>
     <Container className="sm">
         <Row className="m-2 mt-4">
             <Col sm className="text-center">
@@ -42,7 +42,7 @@ return (
              <p className="texto" style = {styles.texto}>Reserva uno de los circuitos que te permitirá conocer experiencias y sabores únicos.</p>
              <Button
              variant="primary"
-             size="xs"
+             size="lg"
              className = "Button mt-4"
              >Reservar
              </Button>
