@@ -90,7 +90,7 @@ const PaquetesMap =() => {
                     <img style={styles.img} className="img-responsive" alt="Bariloche" src={el.src}></img>
                     <h3>{el.nombre}</h3>
                     <p>{el.duracion}</p>
-                    <h4>{el.precio}</h4>
+                    <h4>$ {el.precio}</h4>
                     <Button size="lg" className="nextButton mt-4" onClick={()=>handleClick(el)}>
                     Comprar</Button>                
                 
