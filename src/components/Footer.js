@@ -5,7 +5,7 @@ import Pie from './Footer/Pie'
 const Footer = () => {
     return ( <>
         <Redes/>
-        <Pie/>
+        <Pie/> 
         </>
     );
 }
