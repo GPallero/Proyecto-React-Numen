@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import Comida from './images/Comida.jpg';
+import Comida from '../../images/Comida.jpg';
 import {Container} from 'react-bootstrap';
 import {Row} from 'react-bootstrap';
 import {Col} from 'react-bootstrap';

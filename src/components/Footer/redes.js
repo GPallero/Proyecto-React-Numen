@@ -1,5 +1,5 @@
-import React from "react";
-import '../footer/redes.css'
+import React from "react"
+import './redes.css'
 import Facebook from '../../images/facebook.png'
 import Instagram from '../../images/instagram.png'
 import Twitter from '../../images/twitter.png'

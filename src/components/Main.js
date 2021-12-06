@@ -9,9 +9,10 @@ const Main = () => {
     return (
     <>
         <Seccion1/>
+        <Paquetes/>
         <Micarousel/>
         <Gastronomia/>
-        <Paquetes/>
+
 
     </>
       );
