@@ -1,13 +1,13 @@
-import React from 'react';
-
+import React from "react";
+import Redes from './footer/redes';
+import Pie from './Footer/Pie'
 
 const Footer = () => {
-    return (
-    <div>
-        {/* <Footer1/>
-        <Footer2/> */}
-    </div>
-      );
+    return ( <>
+        <Redes/>
+        <Pie/>
+        </>
+    );
 }
- 
+
 export default Footer;
