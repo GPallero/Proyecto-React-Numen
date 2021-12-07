@@ -11,13 +11,8 @@ const Main = () => {
     <>
         <Seccion1/>
         <Paquetes/>
-        <div className="App">
-         <header className="App-header">
-          <Micarousel />
-        </header>
-        </div>
-
-          <Gastronomia/>
+        <Micarousel />
+        <Gastronomia/>
 
 
     </>
