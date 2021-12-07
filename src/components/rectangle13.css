@@ -1,0 +1,38 @@
+.contenedor{
+   max-width: 1280px; 
+   height: 395px;
+   width: 100%;
+   margin: auto;
+   background-color: #6090C3;
+}
+header{
+    background-color: #FAD7A0;
+    background-size: cover;
+    padding: 0;   
+}
+.titular{
+    text-align: center;
+}
+img {
+    width: 90px;
+    margin-top: 70px;
+    margin-bottom: 75px;
+    border-radius: 30px;
+}
+h1 {
+    font-size: 40px ;
+    color: #e7934f;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+a{
+    color: #FFFFFF;
+    background-color: #eb542f;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 30px 5px 30px;
+}
+
+
+
