@@ -1,16 +1,18 @@
 import React from "react";
+import "../../App.css";
 import "./carousel.css"
 import Iguazu from "../../images/iguazu.png";
 import Jujuy from "../../images/jujuy.jpg";
 import Glaciar from "../..//images/glaciar.jpg";
 import BA from "../../images/buenos-aires.jpg";
 import Caminito from "../..//images/caminito.jpg";
-  
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Container} from 'react-bootstrap'
 
 const MiCarousel = () => {
   return (
     <>
+    <Container fluid>
       <h3>Seguinos en Instagram</h3>
       <h2>@TurismoVueLorem</h2>
       <div className="slides-container">
@@ -24,7 +26,7 @@ const MiCarousel = () => {
           <div className='slides-items-div'><img src={Jujuy} alt="Second slide"/></div>
         </div>
       </div>
-    
+      </Container>    
     </>
   );
 };

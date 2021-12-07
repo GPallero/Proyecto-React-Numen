@@ -9,7 +9,8 @@ const styles = {
         gap: "2em",
         textAlign: "center",
         overflow: "hidden",
-        marginRight: "20px",
+        marginRight: "10px",
+        marginLeft: "10px",
         paddingLeft: "0",
         paddingRight: "0",
         paddingBottom: "30px",
@@ -82,7 +83,7 @@ const PaquetesMap =() => {
 
     return (
  <Fragment>
-    <Container fluid className="sm">
+    <Container fluid className="sm mt-4">
         <Row className="justify-content-center">
         
             {info.map (el => 
