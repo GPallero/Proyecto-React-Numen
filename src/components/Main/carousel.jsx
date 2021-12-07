@@ -1,5 +1,4 @@
 import React from "react";
-// import "../../App.css";
 import "./carousel.css"
 import Iguazu from "../../images/iguazu.png";
 import Jujuy from "../../images/jujuy.jpg";
