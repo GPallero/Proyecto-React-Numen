@@ -27,7 +27,7 @@ const Gastronomia = () => {
 return ( 
 
 <Fragment>
-    <Container className="sm">
+    <Container className="sm" style={{marginTop:"20px", marginBottom:"20px"}}>
         <Row className="m-2 mt-4">
             <Col sm className="text-center">
             <img className="img-responsive" style= {styles.img} src={Comida} alt="comida"></img>
