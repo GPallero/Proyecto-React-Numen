@@ -3,15 +3,14 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Pika from "../images/fat-pikachu"
+import Logo from "../images/Logo3.png";
 
 const Navegacion = () => {
     return (  
         <Navbar bg="light" expand="lg">
             <Container fluid className="d-flex">
                 <div className="d-flex flex-md-grow-1 flex-sm-grow-1 align-items-start">
-                {/* flex-md-grow-1  flex-sm-grow-1 align-items-center*/}
-                    <img className={"m-2"}  style={{ maxWidth: '50px' }} src={Pika} alt="imagen de prueba"/>
+                    <img className={"m-2"}  style={{ maxWidth: '50px' }} src={Logo} alt="Logotipo de la empresa"/>
                     <h2 className={"m-2"}> Logo </h2>
                 </div>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -56,5 +55,4 @@ const Navegacion = () => {
         </Navbar>
     );
 }
- 
 export default Navegacion
