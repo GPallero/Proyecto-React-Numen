@@ -1,24 +1,18 @@
 import React from "react";
-//import Carousel from "react-bootstrap/Carousel";
 import "../componentes/carousel.css"
 import Iguazu from "../images/iguazu.png";
 import Jujuy from "../images/jujuy.jpg";
 import Glaciar from "../images/glaciar.jpg";
 import BA from "../images/buenos-aires.jpg";
-import Llamas from "../images/llamas.jpg";
-import Mendoza from "../images/mendoza.jpg";
-import PeritoMoreno from "../images/perito-moreno.jpeg";
-import SalinasGrandes from "../images/salinas-grandes.png";
-import SanJuan from "../images/san-juan.jpg";
-import TierraDelFuego from "../images/tierra-fuego.jpg";
 import Caminito from "../images/caminito.jpg";
+import { Container } from "react-bootstrap";
   
 
 
 const MiCarousel = () => {
   return (
     <>
-    <section>
+    <section className="carousel">
       <h3>Follow us on Instagram</h3>
       <h2>@TurismoVueLorem</h2>
       <div className="slides-container">
