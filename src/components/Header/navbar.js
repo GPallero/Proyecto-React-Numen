@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Logo3 from "../../images/Logo3.png"
+import logoTitulo from "../../images/LogoTitulo.png"
 
 const Navegacion = () => {
     return (  
@@ -12,7 +13,7 @@ const Navegacion = () => {
                 <div className="d-flex flex-md-grow-1 flex-sm-grow-1 align-items-center">
                 {/* flex-md-grow-1  flex-sm-grow-1 align-items-center*/}
                     <img className={"m-2"}  style={{ maxWidth: '100px' }} src={Logo3} alt="imagen de prueba"/>
-                    <h3 className={"m-2"}> Viaja con nosotros </h3>
+                    <img className={"m-2"}  style={{ width: '200px', height: 'auto' }} src={logoTitulo} alt="imagen de prueba"/>
                 </div>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -50,7 +51,9 @@ const Navegacion = () => {
                     </div>
                 </Navbar.Collapse>
                 <div className={"m-2"}>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbRJREFUSEvNlrkyREEUhr+R254AoQiR0PIEPAESSkRIhIiQSJHgCXgCSygjEuIJbDnqn+q5dWqq+3b3rVbjVE3VLOee72x/97TokbV6xOVfgEeBEdOBu7/shq14F9gxsHdgDnj4iwTqwOLdOnhxtgWr1XrJFoAN915VK4GiFlquIeDNkS6A5aJUqN3qc2DJAWcLgD/svtTJSbCbAkAbYhG40hcxHWujJwrCVwB1MgrWbM8ceK/hkkmmMy7GMCCZRsFashdgsKG0gksaa7WSOzTSGnOJpHbfdqyab0rF8pG2nx3pCNhMpbot1o68mjOi/XhKxZ0TTHPSfFR1e04Rq004FayT7NKBqs2MgGtHlAoWQ0um20sSm4qVa/wfgclu/xywvb20NEokZAKpYpm3QzlgK42EgiuXSrv2oRxwt7RS4EEV5IIFy7kwgtdpE/AqoLYfA1+esvuBdSe501BbcsH7wJYLpptr3hP42vxrOQC2ffBcsA36A/R5gn6bgymUXPLJ1YmvNp+4D2rjmges3+Un0+/edudWrGDjwABwX7PW08An8FRqxikSSvJpUnFS4JhTz8C/k1JKHx+tqHMAAAAASUVORK5CYII=" alt="icono"/>
+                    <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbRJREFUSEvNlrkyREEUhr+R254AoQiR0PIEPAESSkRIhIiQSJHgCXgCSygjEuIJbDnqn+q5dWqq+3b3rVbjVE3VLOee72x/97TokbV6xOVfgEeBEdOBu7/shq14F9gxsHdgDnj4iwTqwOLdOnhxtgWr1XrJFoAN915VK4GiFlquIeDNkS6A5aJUqN3qc2DJAWcLgD/svtTJSbCbAkAbYhG40hcxHWujJwrCVwB1MgrWbM8ceK/hkkmmMy7GMCCZRsFashdgsKG0gksaa7WSOzTSGnOJpHbfdqyab0rF8pG2nx3pCNhMpbot1o68mjOi/XhKxZ0TTHPSfFR1e04Rq004FayT7NKBqs2MgGtHlAoWQ0um20sSm4qVa/wfgclu/xywvb20NEokZAKpYpm3QzlgK42EgiuXSrv2oRxwt7RS4EEV5IIFy7kwgtdpE/AqoLYfA1+esvuBdSe501BbcsH7wJYLpptr3hP42vxrOQC2ffBcsA36A/R5gn6bgymUXPLJ1YmvNp+4D2rjmges3+Un0+/edudWrGDjwABwX7PW08An8FRqxikSSvJpUnFS4JhTz8C/k1JKHx+tqHMAAAAASUVORK5CYII=" alt="icono"/>
+                    </a>
+
                 </div>
             </Container>
         </Navbar>

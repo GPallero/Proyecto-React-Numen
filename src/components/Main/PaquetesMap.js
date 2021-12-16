@@ -95,7 +95,8 @@ const PaquetesMap =() => {
                     <p>{el.duracion}</p>
                     <h4>$ {el.precio}</h4>
                     <Button size="lg" className="nextButton mt-4" onClick={()=>handleClick(el)}>
-                    Comprar</Button>                
+                    Ver más</Button>
+                                     
                 
                 </Col>
             )}

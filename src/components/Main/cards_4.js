@@ -9,7 +9,7 @@ const Cards4 = ({titleS4, descriptionS4}) =>{
         </div>
         <style>{`
         .cardS4{
-            height: 130px;
+            height: 100%;
             color: black;
             margin: 20px;
             

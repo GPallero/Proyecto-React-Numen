@@ -1,6 +1,6 @@
 import React from "react"
 import {Container, Row, Col} from "react-bootstrap"
-import logo from "../../images/logo.jpeg"
+import Logo3completo from "../../images/Logo3completo.png"
 import "./pie.css";
 
 const Pie = () => {
@@ -8,10 +8,10 @@ const Pie = () => {
         <footer>
         <Container fluid>
             <Row className="atributosflex">
-                <Col className="LogoCenter"><img className="FooterLogo" src={logo} alt= "logo"/></Col>
+                <Col className="LogoCenter"><img className="FooterLogo" src={Logo3completo} alt= "logo"/></Col>
                 <Col>
                 <div className="contentFooter">
-                <h4>Asistenia al Viajero</h4>
+                <h4>Asistencia al Viajero</h4>
                 <ul>
                     <li>Assist card</li>
                     <li>Universal</li>

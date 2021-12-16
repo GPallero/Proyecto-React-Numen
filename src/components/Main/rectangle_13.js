@@ -12,7 +12,7 @@ const Rectangle13 = () =>{
           <h1 className="h1_5">Turismo VueLorem</h1>
           <a className="a_5" href="https://www.google.com"
           target="blank"          
-          >Leer màs 
+          >Leer más 
           </a>
      </div>
     </header>

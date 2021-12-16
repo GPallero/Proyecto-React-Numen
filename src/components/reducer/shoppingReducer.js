@@ -1,13 +1,51 @@
 import {types} from "../actions/shoppingActions";
 
 export const shoppingInitialState = {
+
 products: [
-    {id:1, name:"Producto A", price: 10},
-    {id:2, name:"Producto B", price: 50},
-    {id:3, name:"Producto C", price: 100},
-    {id:4, name:"Producto D", price: 150},
-    {id:5, name:"Producto E", price: 200},
-],
+  {
+        id: 1,
+        src: 'https:barilocheturismo.gob.ar/images/news/upload/144_54480854-0594-4512-bbf1-a2a5597709d8.jpg', 
+        name: "Bariloche",
+        duracion: "4 días 3 noches",
+        price: 50000,
+        descripcion: "Hotel 4 estrellas, desayuno incluido. Excursión al Cerro Llao Llao." ,
+        
+    },
+  
+        {
+            id: 2,
+            src: 'https:media.traveler.es/photos/613768f04c612f07ec398ef9/master/w_1600,c_limit/158844.jpg',
+            name: "Cataratas del Iguazú",
+            duracion: "4 días 3 noches",
+            price: 45000,
+            descripcion: "Hotel 3 estrellas, desayuno incluido. Excursión al Parque Nacional Iguazú.",
+            
+
+        },
+    
+        {
+            id: 3,
+            src: 'https:volemos.nyc3.digitaloceanspaces.com/blog/wp-content/uploads/2020/08/Imperdibles-de-salta.jpg',
+            name: "Salta y Jujuy",
+            duracion: "8 días 7 noches",
+            price: 80000,
+            descripcion: "Hotel 4 estrellas, media pensión. Transporte incluido al Centro cívico.",
+            
+
+        },
+                    {
+            id: 4,
+            src: 'https:www.viajesylugares.com/images/showid2/4695105?w=1200&zc=4',
+            name: "Puerto Madryn",
+            duracion: "6 días 5 noches",
+            price: 60000,
+            descripcion: "Hotel 3 estrellas, desayuno incluido. Avistaje de ballenas embarcado.",
+            
+
+        }
+        ],
+        
 cart:[]
 };
 export function shoppingReducer(state,action) {

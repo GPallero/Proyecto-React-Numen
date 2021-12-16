@@ -62,8 +62,8 @@ const Section4 = () => {
                 display: grid;
                 grid-template-columns: 2, 1fr;
                 grid-column-gap: 150px;
-                height: 600px;
-                margin: 20px;
+                height: 100%;
+                width: 100%;
                 align-items:center;
             }
             .mvv{

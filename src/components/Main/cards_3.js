@@ -4,7 +4,7 @@ const Cards3 = ({imageS3, titleS3, descriptionS3}) =>{
     return (
       <>
         <div className="cardS3" >
-            <img src={imageS3} alt=""/>
+            <img className="img_card3" src={imageS3} alt=""/>
           <div className= "card-body">
             <h4 className= "card-titleS3"> {titleS3} </h4>
             <p className= "card-textS3"> {descriptionS3} </p>
@@ -13,7 +13,7 @@ const Cards3 = ({imageS3, titleS3, descriptionS3}) =>{
 
         <style> {`
         .cardS3 {
-          width: 200px;
+          width: 210px;
           height: 400px;
           background-color: #9C9298;
           margin: 20px;
@@ -21,7 +21,7 @@ const Cards3 = ({imageS3, titleS3, descriptionS3}) =>{
           border-radius: 15px;
         }
 
-        img {
+        .img_card3 {
           width:45px;
           height: 45px;
           objet-fit: cover;

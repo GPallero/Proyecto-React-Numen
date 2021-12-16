@@ -45,7 +45,7 @@ const Section3 = () => {
       <>
       <section>
         <div className="titleS3">
-          <h3><span>¿Por qué elegirnos? </span>Porque estamos para acompañarte en todo momento</h3>
+          <h3>¿Por qué elegirnos? <span>Porque estamos para acompañarte en todo momento</span></h3>
         </div>
         <div>
         <div className="row">
@@ -64,12 +64,15 @@ const Section3 = () => {
           </div>
     </section>
   <style> {`
+
     .titleS3 {
+     
     font-size: 20px;
     text-align: center;
+    
   }
   span{
-    color: #00ced1;
+    color: black;
     }
     `}
   </style>
