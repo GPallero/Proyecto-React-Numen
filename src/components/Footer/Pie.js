@@ -16,50 +16,50 @@ const Pie = () => {
                 <ul>
                     <li>Assist card</li>
                     <li>Universal</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
+                    <li>Go Travel</li>
+                    <li>Coris</li>
+                    <li>Cardinal Assistance</li>
                 </ul>
                 </div>
                 </Col>
                 <Col><div className="contentFooter">
-                <h4>Asistenia al Viajero</h4>
+                <h4>Excursiones</h4>
                 <ul>
-                    <li>Assist card</li>
-                    <li>Universal</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
+                    <li>Montaña</li>
+                    <li>Lagos</li>
+                    <li>Mares</li>
+                    <li>Esqui</li>
+                    <li>Compras</li>
                 </ul>
                 </div></Col>
                 <Col><div className="contentFooter">
-                <h4>Asistenia al Viajero</h4>
+                <h4>Escapadas en el día</h4>
                 <ul>
-                    <li>Assist card</li>
-                    <li>Universal</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
+                    <li>Estancias</li>
+                    <li>Tigre</li>
+                    <li>Quintas</li>
+                    <li>Mundo Marino</li>
+                    <li>Noche de Tango</li>
                 </ul>
                 </div></Col>
                 <Col><div className="contentFooter">
-                <h4>Asistenia al Viajero</h4>
+                <h4>Shows o Eventos</h4>
                 <ul>
-                    <li>Assist card</li>
-                    <li>Universal</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
+                    <li>Rock</li>
+                    <li>Musicales</li>
+                    <li>Deportivos</li>
+                    <li>Religiosos</li>
+                    <li>Variado</li>
                 </ul>
                 </div></Col>
                 <Col><div className="contentFooter">
-                <h4>Asistenia al Viajero</h4>
+                <h4>Alquiler de Auto</h4>
                 <ul>
-                    <li>Assist card</li>
-                    <li>Universal</li>
-                    <li>...</li>
-                    <li>...</li>
-                    <li>...</li>
+                    <li>Avis</li>
+                    <li>Alamo</li>
+                    <li>Budget</li>
+                    <li>Sixt</li>
+                    <li>thrifty</li>
                 </ul>
                 </div></Col>
             </Row>
