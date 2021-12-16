@@ -1,7 +1,8 @@
 import React from "react";
 import Cards4 from "./cards_4";
 import ourTeam from "../images_section3/ourteam.jpg";
-import itemPlane from "../images_section3/plane-item.png"
+import itemPlane from "../images_section3/plane-item.png";
+import {Button} from "react-bootstrap";
 
 const infoS4 =[
     {
@@ -45,8 +46,10 @@ const Section4 = () => {
                         </div>
                     ))
                         }
-                        <div className="buttonS4">
-                            <button type="text">Ver nuestros productos</button>
+                        <div className="mb-2">
+                            <Button variant="primary" size="sm">
+                            Ver nuestros productos
+                            </Button>{' '}
                         </div>
                 </div>
                 <div className= "section4image">
@@ -76,11 +79,11 @@ const Section4 = () => {
                 objet-fit: cover;
                 border-radius: 15px 50px 30px 5px;
             }
-
-            button{
-                background-color: #00ced1;
-                text-align: center;
+            .mb-2 {
+                display: flex;
+                justify-content: center;
             }
+
             `}
             </style>
         </>
