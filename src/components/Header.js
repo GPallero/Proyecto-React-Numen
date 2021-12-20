@@ -1,12 +1,12 @@
 import React from 'react';
 import Alerta from './Header/alerta'
-import Navegacion from './Header/navbar'
+import NavBar from './Header/navbar'
 
 const Header = () => {
     return (
         <>
             <Alerta/>
-            <Navegacion/>
+            <NavBar/>
         </>
       );
 }

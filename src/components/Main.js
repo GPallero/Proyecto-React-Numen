@@ -9,7 +9,7 @@ import Section4 from "./Main/section_4.js"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-const Main = () => {
+const Main = ({data}) => {
     return (
     <>
         <Seccion1/>

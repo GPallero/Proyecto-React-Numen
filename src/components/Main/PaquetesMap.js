@@ -1,6 +1,75 @@
 import React, {Fragment, useState} from 'react';
 import {Container, Row, Col, Button, Modal} from'react-bootstrap';
 
+const PaquetesMap =({addToCart}) => {
+    
+    const [show, setShow] = useState(false);
+    const [element, setElement] = useState({});
+    
+    const handleClose = () => setShow(false);
+    const handleClick = (el) => {
+        setElement(el)
+        setShow(true)
+         
+
+    }
+
+    return (
+ <Fragment>
+    <Container fluid className="sm mt-4">
+        <Row className="justify-content-center">
+        
+            {info.map (el => 
+                <Col key={el.id} sm={6} md={4} lg className="border" style={styles.paquete}> 
+                  <img style={styles.img} className="img-responsive" alt="Bariloche" src={el.src}></img>
+                    <h3>{el.nombre}</h3>
+                    <p>{el.duracion}</p>
+                    <h4>$ {el.precio}</h4>
+                    <Button size="lg" className="nextButton mt-4" onClick={()=>handleClick(el)}>
+                    Ver más</Button>
+                                     
+                
+                </Col>
+            )}
+
+            <Modal show={show} onHide={handleClose} centered className="text-center">
+                <Modal.Header closeButton>
+                <Modal.Title>{element.nombre}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <img style={{
+                    margin: "0",
+                    padding: "0", 
+                    width:  "100%",
+                    height: "220px"}}
+
+                    className="img-responsive" alt="Bariloche" src={element.src}></img>
+                    <p> {element.descripcion}</p>
+                    <p>{element.duracion}</p>
+                    <h4>$ {element.precio}</h4>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                    Cerrar
+                    </Button>
+                    
+                    <Button href="/carrito" variant="primary">
+                    Ver más opciones</Button>
+                </Modal.Footer>
+            </Modal>   
+           
+        </Row>
+            
+    </Container>
+</Fragment>
+
+)
+    }
+
+
+
+
+export default PaquetesMap
 const styles = {
     paquete: {
         backgroundColor: "#F7F5F0",
@@ -70,71 +139,3 @@ const info = [
 
           }
           ]
-
-const PaquetesMap =() => {
-    
-    const [show, setShow] = useState(false);
-    const [element, setElement] = useState({});
-    
-    const handleClose = () => setShow(false);
-    const handleClick = (el) => {
-        setElement(el)
-        setShow(true)
-
-    }
-
-    return (
- <Fragment>
-    <Container fluid className="sm mt-4">
-        <Row className="justify-content-center">
-        
-            {info.map (el => 
-                <Col key={el.id} sm={6} md={4} lg className="border" style={styles.paquete}> 
-                    <img style={styles.img} className="img-responsive" alt="Bariloche" src={el.src}></img>
-                    <h3>{el.nombre}</h3>
-                    <p>{el.duracion}</p>
-                    <h4>$ {el.precio}</h4>
-                    <Button size="lg" className="nextButton mt-4" onClick={()=>handleClick(el)}>
-                    Ver más</Button>
-                                     
-                
-                </Col>
-            )}
-
-            <Modal show={show} onHide={handleClose} centered className="text-center">
-                <Modal.Header closeButton>
-                <Modal.Title>{element.nombre}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <img style={{
-                    margin: "0",
-                    padding: "0", 
-                    width:  "100%",
-                    height: "220px"}}
-
-                    className="img-responsive" alt="Bariloche" src={element.src}></img>
-                    <p> {element.descripcion}</p>
-                    <p>{element.duracion}</p>
-                    <h4>$ {element.precio}</h4>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                    Cerrar
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                    Comprar</Button>
-                </Modal.Footer>
-            </Modal>   
-           
-        </Row>
-            
-    </Container>
-</Fragment>
-
-)
-    }
-
-
-
-
-export default PaquetesMap
